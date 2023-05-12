@@ -1,25 +1,27 @@
 # cmatrix Effect
 
-The matrix effect on Windows through `PowerShell`
+The matrix effect on windows through windows power shell
 
-![Matrix](demo.gif "Matrix effect")
+![Mareix](https://github.com/matriex/cmatrix/blob/master/cmatrix.PNG "Matrix effect")
 
 ## How to
 
-1) Open `Windows Powershell` (in some cases Admin privilege might be needed)
+1) Open Windows Powershell with Admin Privillege
 
-2) Either download and save [cmatrix.psm1](https://raw.githubusercontent.com/matriex/cmatrix/master/cmatrix.psm1) or just clonethis repo using `git clone https://github.com/matriex/cmatrix`
+2) Download and save cmatrix.psm1 to desktop
 
-3) Import the module, set the timeout and enable it:
-````powershell
-Set-Executionpolicy remotesigned
-Import-Module .\cmatrix
-Set-ScreenSaverTimeout -Seconds 5
-Enable-ScreenSaver
-````
+3) Create a folder cmatrix on "C:\Windows\System32\WindowsPowerShell\v1.0\Modules\"
 
-If you are happy with it, then you can put it also in one of your module folders that you can get via `$env:PSModulePath`. Just create a folder named `cmatrix` and put `cmatrix.psm1` in it and then the next time you can just import it as `Import-Module cmatrix` without having to specify the full path.
+4) Copy cmatrix.psm1 to "C:\Windows\System32\WindowsPowerShell\v1.0\Modules\cmatrix\cmatrix.psm1"
+
+5) Type the commands on terminal
+  
+   **set-executionpolicy remotesigned**
+   
+   **import-module cmatrix**
+   
+   **Set-screenSaverTimeout -Seconds 5**
+   
+   **Enable-ScreenSaver**
 
 _Author: Oisin Grehan_
-
-_Contributor: Christoph Bergmeister_
